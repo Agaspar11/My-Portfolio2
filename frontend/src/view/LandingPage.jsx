@@ -41,11 +41,11 @@ export default function LandingPage() {
                 </div>
                 <div className="box">
                     <div className="box-list">
-                        <a href="#"><li><img className='facebook' src={facebook} alt="agaspar facebook" /></li></a>
-                        <a href="#"><li><img className='twitter' src={twitter} alt="agaspar twitter" /></li></a>
+                        <a href="https://www.facebook.com/DLatayada"><li><img className='facebook' src={facebook} alt="agaspar facebook" /></li></a>
+                        <a href="https://twitter.com/AgasparL"><li><img className='twitter' src={twitter} alt="agaspar twitter" /></li></a>
                         <a href="#"><li><img className='discord' src={discord} alt="agaspar discord" /></li></a>
                         <a href="#"><li><img className='gmail' src={gmail} alt="agaspar gmail" /></li></a>
-                        <a href="#"><li><img className='linkedin' src={linkedin} alt="agaspar linkedin" /></li></a>
+                        <a href="https://www.linkedin.com/in/agaspar11/"><li><img className='linkedin' src={linkedin} alt="agaspar linkedin" /></li></a>
                     </div>
                 </div>
             </div>
