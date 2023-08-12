@@ -556,11 +556,104 @@ hr {
   margin: 0;
 }
 
-.proj1, .proj2, .proj3, .proj4, .proj5, .proj6,
-.proj7, .proj8, .pro9, .proj10, .proj11, .proj12 {
-
+.front-page1 {
+  height: 200vh;
 }
 
-.front-page1 {
-  height: 180vh;
+/* Social Page */
+
+.social-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+.logo-list {
+  width: 100%;
+}
+
+.logo-list ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.front-page-social {
+  height: 100vh;
+}
+
+.facebook-footer-social {
+  font-size: 60px;
+  background-color: #0056b3;
+  padding: 10px 15px 1px 15px;
+  color: #1C1F23;
+  border-radius: 15px;
+}
+
+.twitter-footer-social {
+  font-size: 60px;
+  background-color: #27b2e0;
+  padding: 10px 15px 1px 15px;
+  color: #1C1F23;
+  border-radius: 15px;
+}
+
+.discord-footer-social {
+  font-size: 60px;
+  background-color: #7188D9;
+  padding: 10px 15px 1px 15px;
+  color: #1C1F23;
+  border-radius: 15px;
+}
+
+.envelope-footer-social {
+  font-size: 60px;
+  background-color: #d41a1a;
+  padding: 10px 15px 1px 15px;
+  color: #1C1F23;
+  border-radius: 15px;
+}
+
+.linkedin-footer-social {
+  font-size: 60px;
+  background-color: #2867B2;
+  padding: 10px 15px 1px 15px;
+  color: #1C1F23;
+  border-radius: 15px;
+}
+
+.logo-list ul li {
+  position: relative;
+  transition: padding 0.3s, color 0.3s;
+}
+
+.logo-list ul li:hover {
+  padding: 15px 20px 6px 20px; /* Adjust the padding on hover */
+  color: #FFFFFF; /* Change the icon color on hover */
+}
+
+.logo-list ul li a::before {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px; /* Adjust the distance of the name from the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: opacity 0.3s, visibility 0.3s, bottom 0.3s; /* Add transition for bottom */
+}
+
+.logo-list ul li:hover a::before {
+  opacity: 1;
+  visibility: visible;
+  bottom: -40px; /* Move the name down further on hover */
 }
